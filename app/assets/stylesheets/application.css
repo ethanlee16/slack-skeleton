@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: BlinkMacSystemFont, -apple-system, sans-serif;
+  margin: 0;
+  padding-top: 50px;
+}
+
+nav {
+  background-color: #4D394B;
+  width: 100%;
+  min-height: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav .welcome {
+  font-size: 8pt;
+}
+
+nav .welcome__name,
+nav .welcome__name a {
+  font-weight: 700;
+  font-size: 10pt;
+  color: white;
+}
+
+nav .links {
+  position: absolute;
+  right: 0;
+}
+
+nav .links a {
+  color: white;
+  margin-right: 10px;
+}
+
+p {
+  margin: 0;
+}

@@ -1,0 +1,266 @@
+.channels_create__container {
+  padding: 5px 20px;
+}
+
+.channels__container {
+  padding: 5px;
+}
+
+.btn__channel_create {
+  display: block;
+  max-width: 100px;
+}
+
+.btn__channel_create, .channels__container > a {
+  text-decoration: none;
+}
+
+.channel__container {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 5px 10px;
+
+  > h3 {
+    flex: 1;
+    margin: 0;
+    font-size: 12pt; 
+  }
+}
+
+.channel__container:hover {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.channel__info {
+  flex: 1;
+  font-size: 10pt;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.app__container {
+  display: flex;
+
+  .sidebar {
+    flex: 1;
+    overflow-x: hidden;
+    padding: 5px;
+    max-width: 200px;
+
+    .channels__container {
+      min-width: 10000px;
+    }
+  }
+
+  .content {
+    flex: 3;
+    display: flex;
+  }
+}
+
+.thread__container {
+  flex: 2;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-width: 350px;
+
+  .message {
+    margin-top: 5px;
+  }
+}
+
+.alert-danger {
+  background-color: #D40E0D;
+  color: white;
+  padding: 10px;
+  // padding-top: 60px;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #3AAE84;
+  color: white;
+  padding: 10px;
+  // padding-top: 60px;
+  text-align: center;
+}
+
+.devise {
+  min-width: 400px;
+  width: 50%;
+  margin: 50px auto;
+  padding: 20px;
+
+  h2, a {
+    display: block;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  br {
+    display: none;
+  }
+
+  .actions {
+    width: 100%;
+  }
+}
+
+.field {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  i, em {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 10pt;
+    margin-top: 3px;
+  }
+}
+
+input {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  min-height: 35px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  font-size: 14pt;
+  min-width: 80%;
+}
+
+input[type="submit"] {
+  width: 100%;
+}
+
+input[type="submit"], .btn {
+  background-color: #3AAE84;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  margin: 10px 0px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+}
+
+.new_user {
+}
+
+.message_container {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin: 0 auto;
+  max-height: 80vh;
+  overflow-y: scroll;
+  flex: 3;
+}
+
+.message {
+  font-family: BlinkMacSystemFont, -apple-system, sans-serif;
+  padding: 5px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  position: relative;
+
+  * {
+    margin: 0;
+  }
+
+  .message__author {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 5px;
+  }
+
+  .message__ts {
+    color: rgba(0, 0, 0, 0.5);
+    // margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .message__text {
+    // font-size: 14pt;
+  }
+  .message__pic_placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .message__pic {
+    border-radius: 5px;
+  }
+
+  .message__pic_spacer {
+    width: 40px;
+    height: 20px;
+  }
+
+  .message__content_container {
+    padding-left: 10px;
+  }
+
+  .reply__btn {
+    font-size: 8pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .thread__link {
+    font-size: 8pt;
+    color: #6EC4CB;
+  }
+}
+
+.message:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+
+  .reply__btn {
+    opacity: 1;
+  }
+}
+
+.message__input_container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 20px;
+  width: 100%;
+
+  form {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .message__input {
+    width: 100%;
+    min-height: 50px;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16pt;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+}
